@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Top.css";
 
 const userObject = {
   id: 1,
@@ -37,13 +38,12 @@ const Top = () => {
     }
   };
   return (
-    <>
+    <div className="top-container">
       <h1>ユーザー情報</h1>
       <button onClick={requestGet}>API Test</button>
       <hr />
       {categoryList}
-    </>
+    </div>
   );
 };
-
 export default Top;

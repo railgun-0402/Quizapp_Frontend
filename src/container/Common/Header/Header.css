@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header-h2,
+a {
+  color: blueviolet;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header {
+  background-color: #def7ff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.header-h2 {
+  font-size: 26px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links li a {
+  transition: all 0.4s;
+}
+
+.nav_links li a:hover {
+  color: rgb(107, 212, 177);
+}

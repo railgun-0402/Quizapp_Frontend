@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Login.css";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -36,7 +37,7 @@ const Login = () => {
       localStorage.setItem("id", data.userId);
       localStorage.setItem("pass", data.password);
 
-      navigate("/Top");
+      navigate("/");
     } else {
       // ログイン失敗
       console.log("ログイン失敗");
@@ -56,7 +57,6 @@ const Login = () => {
     <div className="form-container">
       <p className="errorMsg">{errorMsg}</p>
       <h1>Login Form</h1>
-
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* ユーザID */}
         <label htmlFor="userId">ユーザID</label>
